@@ -46,7 +46,8 @@ gulp.task("js-min",function(){
 gulp.task("html-min",function(){
 	return gulp.src(path.s_html)
 			.pipe(minifyhtml())
-			.pipe(htmlPath({path:"images"}))
+			//.pipe(htmlPath({path:"images"}))
+			//.pipe(htmlPath())
 			.pipe(gulp.dest(path.d_html));
 });
 
