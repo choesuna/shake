@@ -1,0 +1,51 @@
+@media (max-width:1060px){
+	.col-pc-1{width:8.333%;}
+	.col-pc-2{width:16.666%;}
+	.col-pc-3{width:25%;}
+	.col-pc-4{width:33.332%;}
+	.col-pc-5{width:41.666%;}
+	.col-pc-6{width:50%;}
+	.col-pc-7{width:58.333%;}
+	.col-pc-8{width:66.666%;}
+	.col-pc-9{width:75%;}
+	.col-pc-10{width:83.333%;}
+	.col-pc-11{width:91.666%;}
+	.col-pc-12{width:100%;}
+
+}
+
+
+/* 임시설정 */
+
+
+@media (max-width:320px){
+.col-tablet-1{width:8.333%;}
+.col-tablet-2{width:16.666%;}
+.col-tablet-3{width:25%;}
+.col-tablet-4{width:33.333%;}
+.col-tablet-5{width:41.666%;}
+.col-tablet-6{width:50%;}
+.col-tablet-7{width:58.333%;}
+.col-tablet-8{width:66.666%;}
+.col-tablet-9{width:75%;}
+.col-tablet-10{width:83.333%;}
+.col-tablet-11{width:91.666%;}
+.col-tablet-12{width:100%;}
+}
+
+
+@media (max-width:320px){
+.col-mobile-1{width:8.333%;}
+.col-mobile-2{width:16.666%;}
+.col-mobile-3{width:25%;}
+.col-mobile-4{width:33.333%;}
+.col-mobile-5{width:41.666%;}
+.col-mobile-6{width:50%;}
+.col-mobile-7{width:58.333%;}
+.col-mobile-8{width:66.666%;}
+.col-mobile-9{width:75%;}
+.col-mobile-10{width:83.333%;}
+.col-mobile-11{width:91.666%;}
+.col-mobile-12{width:100%;}
+
+}
