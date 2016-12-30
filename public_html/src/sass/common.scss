@@ -22,6 +22,9 @@ li img, dd img{
 img{
 	max-width:100%
 }
+address{
+	font-style:normal;
+}
 input[type=button]{
 	cursor:pointer;
 }
@@ -307,8 +310,8 @@ a{
 					font-size:1.5em;
 					max-width:100%;
 					height:50px;
-					line-height:41px;
-					border:4px solid $greenFc;
+					line-height:45px;
+					border:2.5px solid $greenFc;
 					border-radius:2px;
 				}
 				
@@ -489,7 +492,7 @@ a{
 	width:100%;
 	height:360px;
 	background-color:#1d1d1d;
-	line-height:1.8;
+
 }
 #footer{
 	font-size:0.98em;
@@ -504,12 +507,23 @@ a{
 			color:#fff;
 			text-align:center;
 			font-size:1.1em;
-			ul>li>a{
-				font-size:0.8em;
-				text-align:center;
+			line-height:1.8;
+			ul>li{
+				line-height:1.5;
+				>a{
+					font-size:0.8em;
+					ext-align:center;
+				}
 			}
-		
 		}
+	}
+	.f_logo{
+	margin-top:45px;
+		text-align:center;
+	}
+	address{
+		text-align:center;
+		font-size:0.8em;
 	}
 }
 
