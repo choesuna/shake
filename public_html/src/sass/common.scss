@@ -133,7 +133,7 @@ a{
 			}
 			a{
 				padding-left:5px;
-				color:#60ae2b;
+				color:$greenFc;
 
 			}
 		}
@@ -526,6 +526,23 @@ a{
 		}
 	}
 }
+.btnTop>a{
+	display:block;
+	position:fixed;
+	right:20px;
+	bottom:200px;
+	width:42px;
+	height:42px;
+	font-size:0.6em;
+	color:#999;
+	background:url(../images/common/arrow.png) 0 -87px no-repeat;
+	span{
+		display:block;
+		padding-top:44px;
+		text-align:center;
+	}
+}
+
 
 @media (min-width:769px){ 
 	.col-pc-1{width:8.333%;}
@@ -643,6 +660,9 @@ a{
 			width:33.3333%;
 			height:130px;
 		}	
+	}
+	.btnTop>a{
+		display:none;
 	}
 
 }
