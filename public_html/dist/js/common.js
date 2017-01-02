@@ -1,1 +1,1 @@
-$(function(){$(".wrapSearch p a").on("click",function(){$(".wrapSearch form").slideToggle()})});
+$(function(){$(".wrapSearch p a").on("click",function(){$(".wrapSearch form").slideToggle()}),$(".autoSlider_vis1").bxSlider({auto:!0,autoControls:!0,controls:!1,pager:!0})});
