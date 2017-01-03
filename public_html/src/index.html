@@ -1,56 +1,14 @@
-<!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="Title" content="kraze Burger">
-	<meta name="Author" content="kraze Burger">
-  <meta name="Keywords" content="Kraze Burger, Kraze, Burger, Hot Doge">
-  <meta name="Description" content="Kraze Burger는 meat mast라는 신념아래 신선토핑, 건강한 번, 프리미엄 패티로 만든 최고의 버거를 만들고 있습니다.">
-	<meta name="viewport" content="width=devie-width, initial-scale=1.0, minimum-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<script type="text/javascript" src="js/html5shiv.min.js"></script>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/common.js"></script>
-	<link rel="shortcut icon" type="image/x-icon" href="images/common/favicon.png" />
-	<link rel="stylesheet" type="text/css" href="css/common.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/header.css" media="all" />
+<?  include"inc/top.html"; ?>
 	<title>kraze burger</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
-	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
-<!-- 	<link rel="stylesheet" type="text/css" href="css/ie8.css" media="all" /> -->
+	
+<!-- <link rel="stylesheet" type="text/css" href="css/ie8.css" media="all" /> -->
 </head>
 <body>
 	<!-- 전체 영역 bg 넣기 -->
 	<div class="wrap">
 		<!-- // 헤더영역 -->
-		<div class="wrapHeader">
-			<header id="header">
-				<p class="skipMenu blind"><a href="#">본문바로가기</a></p>
-				<div class="logo">
-					<h1><a href="index.html"><img src="images/common/top_logo.png" alt="크라제버거" /></a></h1>
-				</div>
-				<div class="wrapSearch">
-					<form action="#" method="post">
-						<fieldset>
-							<legend>검색하기</legend>
-								<input type="hidden" name="h_hidden" />
-								<p><input type="search" name="h_search" id="h_search" placeholder=" Search.."/><a href="#">GO</a></p>
-								<!-- question:input image를 쓴까? a링크 걸어서 고를 할까? 페이지가 넘어가는데 뭐가맞는 것인가? -->
-						</fieldset>
-					</form>
-					<p><a href="#"><span class="blind">크라제버거 사이트 내 검색</span></a></p>
-				</div>
-				<div class="gnb">
-					<h2 class="blind">주메뉴</h2>
-					<ul class="clearFix">
-						<li><a href="login.html">LOGIN</a></li>
-						<li><a href="menu.html">MENU</a></li>
-						<li><a href="event.html">EVENT</a></li>
-						<li><a href="store.html">STORE</a></li>
-					</ul>
-				</div>
-			</header>
-		</div>
+		<? include"inc/header.html"; ?>
 		<!-- 헤더영역 // -->
 
 		<!-- // 컨테이너영역 -->
@@ -58,47 +16,13 @@
 			<div id="container">
 				<div class="wrapVisaul_1">
 					<h3 class="blind">메인 슬라이드</h3>
-				<!-- 오토슬라이드 -->
-					<div class="visual_1">
-						<div class="autoSlide">
-							<ul class="autoSlider_vis1 clearFix">
-								<li><a href="#"><img src="images/main/vis1_1.jpg" alt="새로워진 크라제버거 홈페이지를 이용해주세요" /></a>
-									<div class="textVis1">
-										<p>Introducing the first-ever kraze App, a mobil ordering app !</p>
-										<p>크라제 버거를 즐기는 또 다른 방법</p>
-										<p>KRAZE BURGER APP !</p>
-									</div>
-							
-								</li>
-								<li><a href="#"><img src="images/main/vis1_2.jpg" alt="더욱 맛있어진 시즌 음료를 마시면서 행복한 한해 마무리되세요" /></a>
-									<div class="textVis1">
-										<p>happy christmas with kraze burger.</p>
-										<p>크라제 버거의 특별한 시즌 음료로 행복한 크리스마스를 즐기세요</p>
-										<p>marry christmas~!</p>
-									</div>
-								</li>
-								<li><a href="#"><img src="images/main/vis1_3.jpg" alt="새로워진 크라제버거 홈페이지를 이용해주세요" /></a>
-									<div class="textVis1">
-										<p>Introducing the first-ever kraze App, a mobil ordering app !</p>
-										<p>크라제 버거를 즐기는 또 다른 방법</p>
-										<p>KRAZE BURGER APP !</p>
-									</div>
-								</li>
-								<li><a href="#"><img src="images/main/vis1_4.jpg" alt="더욱 맛있어진 시즌 음료를 마시면서 행복한 한해 마무리되세요" /></a>
-									<div class="textVis1">
-										<p>happy christmas with kraze burger.</p>
-										<p>크라제 버거의 특별한 시즌 음료로 행복한 크리스마스를 즐기세요</p>
-										<p>marry christmas~!</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
+					<!-- 오토슬라이드 -->
+					<? include"inc/autoSlideVis1.html"; ?>
 				</div>
 				<div class="wrapArticle_1">
 					<div class="article_1 clearFix">
 						<div class="art_1_1 col-pc-6 col-tablet-12">
-							<h4>Our Story</h4>
+							<h4><a href="introKraze.html">Our Story</a></h4>
 							<div>
 								<p> 1998년 아메리칸 프리미엄 수제버거를 국내에 최초로 소개하며 16년 동안 버거 철학을 싸아온 크라제버거가 버거의 전문성을 강조하는, ‘Meat Master’라는 브랜드의 신념을 브랜드 컨셉으로  재정의 하였다.</p>
 								<p>올바른 패티와 신선한 토핑으로 만든 버거, 건강한 핫도그, 재미있는 사이드 디쉬 등 다양한 메뉴에서 부터 리테일 환경에 이르기까지 크라제버거만의 고유한 버거 철학을 담아내며 크라제버거는 재탄생되었다.</p>
@@ -228,63 +152,7 @@
 		<!-- 컨테이너영역// -->
 
 		<!-- //푸터영역 -->
-		<div class="wrapFooter">
-			<footer id="footer">
-				<div class="siteMap">
-					<ul class="clearFix">
-						<li class="col-tablet-4">KRAZE
-							<ul>
-								<li><a href="#">브랜드소개</a></li>
-							</ul>
-						</li>
-						<li class="col-tablet-4">FOR YOU
-							<ul>
-								<li><a href="#">로그인</a></li>
-								<li><a href="#">회원가입</a></li>
-								<li><a href="#">문의하기</a></li>
-							</ul>
-						</li>
-						<li class="col-tablet-4">STORE
-							<ul>
-								<li><a href="#">타워점</a></li>
-								<li><a href="#">가회동점</a></li>
-							</ul>
-						</li>
-						<li class="col-tablet-4">MENU
-							<ul>
-								<li><a href="#">BURGER</a></li>
-								<li><a href="#">DOGES</a></li>
-								<li><a href="#">SIDE</a></li>
-								<li><a href="#">SALAD</a></li>
-								<li><a href="#">BEVERAGE</a></li>
-							</ul>
-						</li>
-						<li class="col-tablet-4">COMMUNITY
-							<ul>
-								<li><a href="#">EVENT</a></li>
-								<li><a href="#">NOTICE</a></li>
-							</ul>
-						</li>
-						<li class="col-tablet-4">SOCIAL MEDIA
-							<ul>
-								<li><a href="#">FACE BOOK</a></li>
-								<li><a href="#">INSTAGRAM</a></li>
-								<li><a href="#">TWITTER</a></li>
-							</ul>
-						</li>
-                    </ul>
-				</div>
-				<div class="btnTop"><a href="#"><span>BACK TO TOP</span></a></div>
-				<div class="f_logo">
-					<img src="images/common/footer_logo.png" alt="크라제버거" />
-				</div>
-				<address>
-					<p>본 사이트는 포트폴리오용 으로 제작된 사이트 입니다. </p>
-					<p>크라제버거를 리뉴얼 하였습니다. </p>
-					<p>문의사항 : choesuna@hotmail.com</p>
-				</address>
-			</footer>
-		</div>
+		<? include"inc/footer.html"; ?>
 		<!-- 푸터영역// -->
 	</div> 
 </body>
