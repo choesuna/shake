@@ -107,7 +107,7 @@ a{
 	height:59px;
 	position:absolute;
 	top:-1px;
-	right:0;
+	right:-70px;
 
 	form{
 		display:none;
@@ -171,6 +171,9 @@ a{
 				font-size:1.1em;
 				text-align:center;
 				vertical-align:middle;
+				&:hover{
+					color:$hText;
+				}
 
 			}
 			&:first-child+li{
@@ -634,6 +637,9 @@ a{
 			>a{
 				font-size:0.8em;
 				ext-align:center;
+				&:hover{
+					color:#fff;
+				}
 			}
 		}
 	}

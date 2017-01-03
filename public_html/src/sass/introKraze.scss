@@ -38,7 +38,8 @@
 	h4 p{
 		color:$dark;
 		font-size:1.7em;
-		margin-bottom:20px;
+		margin-bottom:40px;
+		font-weight:bold;
 	}
 	h4 + p{
 			padding-top:30px;
@@ -53,4 +54,25 @@
 	.art_1_2{
 		padding-right:0;
 	}
+}
+.art_1_1{
+	h4{
+		color:$dark;
+		font-weight:bold;
+	}
+}
+.textSymbol{
+	color:$text;
+	line-height:1.8;
+	font-size:0.95em;
+	h5{
+		padding:50px 0 20px;
+		color:$dark;
+		font-weight:bold;
+		font-size:1.1em;
+	}
+	span{
+		color:$greenFc;
+	}
+
 }
