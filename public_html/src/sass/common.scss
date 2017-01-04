@@ -212,29 +212,30 @@ a{
 }
 
 .visual_1 .autoSlide{
-	li{
-		.textVis1{
-			position:absolute;
-			bottom:5%;
-			left:0;
-			max-width:400px;
-			background-color:#000;
-			opacity:0.7;
-			padding:3% 4%;
 
-			p{
+	.textVis1{
+		display:none;
+		position:absolute;
+		bottom:5%;
+		left:0;
+		max-width:400px;
+		background-color:#000;
+		opacity:0.7;
+		padding:3% 4%;
+		
+		p{
+			font-size:0.9em;
+			color:#fff;
+			text-transform: uppercase;
+
+			&:first-child+p+p{
+				padding-top:10px;
+				color:$greenFc;
 				font-size:0.9em;
-				color:#fff;
-				text-transform: uppercase;
-
-				&:first-child+p+p{
-					padding-top:10px;
-					color:$greenFc;
-					font-size:0.9em;
-				}		
-			}
+			}		
 		}
 	}
+	
 	.bx-controls{
 		position:absolute;
 		top:90%;
@@ -293,6 +294,9 @@ a{
 		max-width:980px;
 		margin:0 auto;
 }
+
+#ourstory{display:none;}
+
 .art_1_1{
 	float:left;
 	padding:40px 20px 0;
