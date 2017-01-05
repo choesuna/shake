@@ -1,6 +1,6 @@
 <?  include"inc/top.html"; ?>
 	<title>kraze burger</title>
-	<link rel="stylesheet" type="text/css" href="css/introKraze.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/login.css" media="all" />
 	
 <!-- <link rel="stylesheet" type="text/css" href="css/ie8.css" media="all" /> -->
 </head>
@@ -14,84 +14,81 @@
 		<!-- // 컨테이너영역 -->
 		<div class="wrapCon">
 			<div id="container">
+				<div class="wrapSubVis_1">
+					<div class="subVis_1">
+						<div class="imgWrap">
+							<img src="images/main/vis2_1.jpg" alt="프리미엄 크라제버거" />
+						</div>
+					</div>
+				</div>
 				<div class="wrapLnb">
 					<div class="lnb">
 						<ul class="clearFix">
-							<li><a href="#introLogo">브랜드소개</a></li>
-							<li><a href="#ourStory">브랜드스토리</a></li>
+							<li><a href="#introLogo">로그인</a></li>
+							<li><a href="#ourStory">회원가입</a></li>
+							<li><a href="#ourStory">문의하기</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="wrapMember">
 				<div class="member">
-					<p>* 는 필수입력항목입니다.</p>
-					<form action="#" method="post">
-						<fieldset>
-							<legend>회원가입</legend>
-							<table>
-								<caption>회원가입</caption>
-									<tbody>
-										<tr>
-											<th scope="row"><p> * 아이디</p></th>
-											<td><label for="user_id"></label><input type="text" name="user_id" id="user_id" /></td>
-										</tr>
-										<tr>
-											<th scope="row"><label for="user_name"> * 이름</label></th>
-											<td><input type="text" name="user_name" id="user_name" /></td>
-										</tr>
-										
-										<tr>
-											<th><label for="user_pw"> * 패스워드</label></th>
-											<td><input type="password" name="user_pw" id="user_pw" /> <span>영문/숫자 4~1자 이내</span></td>
-										</tr>
-										<tr>
-											<th><label for="user_pw_confirm"><img src="images/icon_check.gif" alt="필수입력사항입니다." /> 패스워드 확인</label></th>
-											<td><input type="password" name="user_pw_confirm" id="user_pw_confirm" /></td>
-										</tr>
-										<tr>
-											<th><label for="user_zpcode">주소</label></th>
-											<td>
-												<p>
-													<input type="text" name="user_address" id="user_address" title="우편번호 앞 3자리" />
-														- 
-													<input type="text" name="user_address_2" id="user_address_2" title="우편번호 뒤 3자리" />
-													 <input type="image" src="images/btn_addrckeck.gif" alt="우편번호찾기"  id="user_zpcode"/>
-												</p>
-												 <p>
-													<input type="text" name="user_address_3" id="user_address_3" />
-												</p>
-											</td>
-										</tr>
-										<tr>
-											<th><label for="phone">전화번호</label></th>
-											<td><input type="text" name="phone" id="phone" /> - 
-											<input type="text" name="phone_2" id="phone_2" /> - 
-											<input type="text" name="phone_3" id="phone_3" /></td>
-										</tr>
-										<tr>
-											<th><label for="e-mail"><img src="images/icon_check.gif" alt="필수입력사항입니다." /> 이메일</label></th>
-											<td><input type="text" name="e-mail" id="e-mail" /></td>
-										</tr>
-										<tr>
-											<th><label for="email_subscribe">메일링 리스트 가입</label></th>
-											<td>
-												<p>메일링리스트에 가입하시면 WebCafe의 뉴스레터를 받아보실 수 있습니다.</p>
-												<p>
-													<input type="radio" name="subscribe" id="email_subscribe" value="y" checked/> 
-													<label for="email_subscribe">예</label>
-													<input type="radio" name="subscribe" id="email_subscribe_2" value="n"/> 
-													<label for="email_subscribe_2">아니오</label>
-												</p>
-											</td>			
-										</tr>
-									</tbody>
-							</table>
-							<p>
-								<input type="image" src="images/btn_join.gif" alt="회원가입" />
-								<input type="image" src="images/btn_cancel.gif" alt="취소"/>
-							</p>
-						</fieldset>
-					</form>
+					<div class="wrapForm">
+						<form action="#" method="post">
+							<fieldset>
+								<legend>회원가입</legend>
+								<table>
+									<caption>회원가입</caption>
+										<tbody>
+											<tr>
+												<th scope="row"><label for="user_id">아이디</label></th>
+												<td><input type="text" name="user_id" id="user_id" placeholder="아이디"/></td>
+											</tr>
+											<tr>
+												<th><label for="user_pw">비밀번호</label></th>
+												<td><input type="password" name="user_pw" id="user_pw" placeholder="영문/숫자 (8자 이상)"/> <span></span></td>
+											</tr>
+											<tr>
+												<th><label for="user_pw_confirm">비밀번호 재확인</label></th>
+												<td><input type="password" name="user_pw_confirm" id="user_pw_confirm" /></td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="user_name">이름</label></th>
+												<td><input type="text" name="user_name" id="user_name" /></td>
+											</tr>
+											<tr class="phone">
+												<th rowspan="2"><label for="phone">휴대폰 번호</label></th>
+												<td>
+													<p>
+														<select name="phone_1" id="phone_1" title="휴대폰 번호 앞자리를 선택해주세요">
+															<option value="010">010</option>
+															<option value="011">011</option>
+															<option value="016">016</option>
+														</select>
+														<span>
+															<input type="text" name="phone_2" id="phone_2" />
+															<button class="checkBtn">인증</button>
+														</span>
+													</p>
+												</td>
+												
+											</tr>
+											<tr>
+												
+												<td><input type="text" name="reCheckBtn" placeholder="인증번호(10분 동안 유효)" /><button class="reCheckBtn">인증</button></td>
+											</tr>		
+											<tr>
+												<th><label for="e-mail">사용하실 이메일 주소</label></th>
+												<td><input type="text" name="e-mail" id="e-mail" /></td>
+											</tr>										
+										</tbody>
+								</table>
+								<p>
+									<input type="image" src="images/btn_join.gif" alt="회원가입" />
+									<input type="image" src="images/btn_cancel.gif" alt="취소"/>
+								</p>
+							</fieldset>
+						</form>
+					</div>
 				</div>
 				</div>
 			</div>

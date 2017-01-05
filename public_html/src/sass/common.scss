@@ -6,7 +6,7 @@
 	margin:0; 
 	padding:0;
 }
-*,*:after,*:before{/* 반응형 */ 
+*,*:after,*:before,input{/* 반응형 */ 
 	box-sizing:border-box;
 }
 ul, li, dt, dd{
@@ -67,7 +67,9 @@ a{
 	color:#999;
 	text-decoration:none;
 }
-
+table{
+	table-layout: fixed;
+}
 
 
 
@@ -188,8 +190,32 @@ a{
 	}
 }
 
+.wrapLnb{
+	max-width:980px;
+	height:55px;
+	line-height:55px;
+	margin:0 auto;
+	border-bottom:1px solid $bd;
+}
 
-
+.lnb{
+	margin:0 auto;	
+	ul{
+		li{
+			float:left;
+			a{
+				display:block;
+				text-align:center;
+				color:$text;
+				font-size:0.98em;
+				&:hover{
+					color:$hText;
+				}
+				
+			}
+		}
+	}
+}
 .wrapCon{
 	width:100%;
 }
