@@ -31,76 +31,303 @@
 	padding:40px 5%;
 	
 }
+
+.textForm{
+	height:120px;
+	background-color:$greenFc;
+	
+	color:#fff;
+	width:100%;
+	padding-top:30px;
+	border-bottom:transparent;
+	margin-bottom:5px;
+	font-size:1.5em;
+	box-shadow:inset 0 0 10px $text;
+
+	p{
+		
+		text-align:center;
+		line-height:60px;
+		height:60px;
+		text-shadow: 0 0 5px $text;
+		background:url(../images/sub/join.png) 0 0 repeat-x;
+	}
+
+
+}
 .wrapForm{
-	border:4px solid rgba(96, 174, 43, 0.3);
+	//border:4px solid rgba(96, 174, 43, 0.3);
+
 	max-width:700px;
 	margin:0 auto;
-	padding:40px 5%;
+	
 	form{
-		border:1px solid $greenFc;
+		border:5px solid $greenFc;
+		padding:40px 5%;
+		background-color:#fff;
 	}
 	table{
 		tr{
+			width:100%;
+			font-size:1em;
+			color:$text;
+
 			th{
 				padding:13px 3%;
-				border:1px solid black;
 				width:30%;
 				text-align:left;
-
-				
+				label{
+					display:inline-block;
+					margin-left:5px;
+					padding-left:10px;
+					color:$greenFc;
+					border-left:3px solid $greenFc;
+				}
 			}
 			td{
 				width:70%;
-				padding:10px 5%;
-				border:1px solid black;
+				padding:5px 5%;
 
 				input[type=text]{
 					width:100%;
 					height:30px;
-
-				
-
+					border:none;
+					padding-left:5px;
 				}
+
 				input[type=password]{
 					width:100%;
 					height:30px;
-				
-
-				}
-
-			}
-			&.phone{
-				td>p{
-					select{
-						width:20%;
-						height:30px;
-						border:none;
-					}
-					span{
-						display:inline-block;
-						width:80%;
-						padding-right:70px;
-						position:relative;
-					}
-					input[type=text]{
-						width:100%;
-						height:30px;
-					
 					border:none;
+					padding-left:5px;
+				
+				}
+
+				p{
+					border:1px solid $bd;
+				}
+
+			}
+		}
+
+		.phone{
+			td > p{
+				position:relative;
+		
+				span:first-child{
+					width:70px;
+					height:100%;
+					padding:3px 0 ;
+					position:absolute;
+					left:0;
+					top:0;
+					display:inline-block;
+					zoom:1;
+					*display:inline;
+					
+					select{
+						width:100%;
+						height:100%;
+						padding-left:5px;
+						border:none;
+						border-right:1px solid $bd;
 
 					}
-					button{
-						position:absolute;
-						right:0;
-						top:0;
-						width:70px;
-						height:30px;
-						border:none;
-					}
+					
+			
 
 				}
+				span:first-child+span{
+					width:100%;
+					padding:0 70px;
+
+					display:inline-block;
+					zoom:1;
+					*display:inline;
+					
+					
+
+				}
+				span:first-child+span+span{
+					width:70px;
+					height:100%;
+
+					position:absolute;
+					right:0;
+					top:-1px;
+					
+					display:inline-block;
+					zoom:1;
+					*display:inline;
+					
+					button{
+						width:100%;
+						height:32px;
+						background:none;
+						border:2px solid $greenFc;
+					}
+				}
 			}
-			
+		}
+
+		.reCheckPhone{
+			td>p{
+				position:relative;
+
+				span:first-child{
+					width:100%;
+					padding-right:70px;
+					display:inline-block;
+					zoom:1;
+					*display:inline;
+				}
+				span:first-child+span{
+					width:70px;
+					height:100%;
+					position:absolute;
+					right:0;
+					top:-1px;
+
+					display:inline-block;
+					
+					button{
+						width:100%;
+						height:32px;
+						background:none;
+						border:2px solid $greenFc;
+					}
+				}
+			}
+		}
+		tr:first-child+tr+tr{
+			border-bottom:1px solid $bd;
+		}
+		tr:first-child+tr+tr>th>label, tr:first-child+tr+tr>td>p{
+			margin-bottom:30px;
+		}
+		
+		tr:first-child+tr+tr+tr>th>label, tr:first-child+tr+tr+tr>td>p{
+			margin-top:30px;
+		}
+
+	}
+	.join>.wrapBtn{
+		border-top:1px solid $bd;
+		margin-top:30px;
+		p{
+			margin-top:60px;
+			text-align:center;
+
+			input[type="submit"]{
+				border:none;
+				width:170px;
+				height:70px;
+				background-color:$greenFc;
+				color:#fff;
+				font-size:1.5em;
+					border-radius:2px;
+
+			}
+			input[type="reset"]{
+				border:none;
+				width:170px;
+				height:70px;
+				background-color:$hText;
+				color:#fff;
+				font-size:1.2em;
+					border-radius:2px;
+
+			}
+
 		}
 	}
 }
+
+@media (max-width:768px){ 
+	.wrapForm table tr{
+		th{
+			width:25%;
+			font-size:0.98em;
+		}
+	}
+}
+
+@media all and (max-width:480px) {
+	.textForm{
+		font-size:1.2em;
+	}
+	.wrapForm table{ 
+		tr{
+			th{
+				display:block;
+				width:100%;
+				
+				label{
+				
+					margin-bottom:0;
+			
+				}
+				.confirmPassword{
+					label{margin-bottom:0;}
+				}
+
+
+			}
+			td{
+				display:block;
+				width:100%;
+				p{
+	
+				}
+			}
+		}
+		
+		tr:first-child+tr+tr>th>label{
+			margin-bottom:0;
+		}
+		
+		tr:first-child+tr+tr+tr>td>p{
+			margin-top:0;
+		}
+		.phone{
+			td > p{
+				span:first-child{
+					width:50px;
+					select{
+						padding-left:0;
+					}
+				}
+				span:first-child+span+span{
+					width:40px;
+					background-color:$greenFc;
+					button{color:#fff;}
+				}
+			}
+		}
+		.reCheckPhone{
+			td>p{
+				span:first-child+span{
+					width:40px;
+					background-color:$greenFc;
+					button{color:#fff;}
+				}
+			}
+		}
+		
+
+	}
+	.wrapForm{
+		.join>.wrapBtn{
+			p{
+				margin-top:30px;
+				input[type="submit"],input[type="reset"]{
+					width:130px;
+					height:50px;
+					font-size:1.1em;
+				}
+			}
+		}
+	}
+}
+
+

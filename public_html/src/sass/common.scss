@@ -23,7 +23,7 @@ img{
 address{
 	font-style:normal;
 }
-input[type=button]{
+input[type=button], input[type=reset], input[type=submit],button{
 	cursor:pointer;
 }
 caption{
@@ -55,7 +55,7 @@ fieldset{
 	*zoom:1;
 }
 *,*:after,*:before{box-sizing:border-box;}
-h1,h2,h3,h4,h5,h6,strong {
+h1,h2,h3,h4,h5,h6,strong,th {
 	font-weight:normal;
 	font-size:100%; 
 }
@@ -376,7 +376,7 @@ table{
 	padding:4.5% 3.3%;
 	float:left;
 	height:630px;
-
+	&:hover p:first-child{background-color:$greenFc; color:#fff;}
 	p{
 		padding:9% 0;
 		color:$text;
