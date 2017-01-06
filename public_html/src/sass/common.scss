@@ -326,13 +326,16 @@ table{
 .art_1_1{
 	float:left;
 	padding:40px 20px 0;
-
 	h4{
 		padding-left:5px;
 		font-size:1.8em;
 		margin-bottom:13px;
-		a{color:$dark;
-		&:hover{color:$hText;}
+		a{
+			color:$dark;
+		
+			&:hover{
+				color:$hText;
+			}
 		}
 	}
 	div > p{
@@ -376,7 +379,14 @@ table{
 	padding:4.5% 3.3%;
 	float:left;
 	height:630px;
-	&:hover p:first-child{background-color:$greenFc; color:#fff;}
+	&:hover p:first-child{
+		background-color:$greenFc; color:#fff;
+		transition:all 2s;
+		-webkit-transition: all 2s;
+	
+	}
+	
+
 	p{
 		padding:9% 0;
 		color:$text;
