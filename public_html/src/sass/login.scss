@@ -8,7 +8,7 @@
 	border-bottom:none;
 }
 .lnb{
-		width:360px;
+		max-width:360px;
 	>ul>li{
 		width:120px;
 		margin:0 auto;
@@ -24,9 +24,11 @@
 .wrapLogin{
 	width:100%;
 	height:100%;
-	margin-bottom:-356px;
-	margin:0 auto;
+	
+	margin:0 auto ;
+	padding-bottom:30px;
 	background:url(../images/sub/loginBg.jpg) 0 0 no-repeat;
+	background-size:cover;
 }
 .textLogin{
 	color:#fff;
@@ -37,19 +39,22 @@
 	padding:50px 0 30px;
 
 }
+
 .wrapForm{
 	background-color:#fff;
 	max-width:570px;
-	height:470px;
+	min-height:470px;
 	margin:0 auto 70px;
 	border:1px solid #ddd;
 	border-radius:3px;
+	padding-bottom:50px;
 }
 .textForm{
 	font-size:1.4em;
 	color:$text;
 	padding:30px 5px;
 	border-bottom:1px solid $bd;
+
 	margin-bottom:35px;
 	p{
 		text-align:center;
@@ -157,5 +162,28 @@ table{
 	
 	}
 	
+}
+@media (max-width:768px){ 
+	.login{
+		width:100%;
+		padding:0 5%;
+
+	}
+
+}
+@media all and (max-width:480px) {
+	.lnb{
+		max-width:360px;
+		>ul{
+			width:100%;
+			li{
+				width:33.33%;
+	
+			}
+		}
+	}
+
+
+
 }
 

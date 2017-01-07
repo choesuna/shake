@@ -15,7 +15,7 @@
 
 /*lnb기본틀은 common.scss*/
 .lnb{
-		width:360px;
+		max-width:360px;
 	>ul>li{
 		width:120px;
 		margin:0 auto;
@@ -165,6 +165,12 @@
 						height:32px;
 						background:none;
 						border:2px solid $greenFc;
+						&:hover{
+								background-color:$greenFc; 
+								color:#fff;
+								transition:all 1s;
+								-webkit-transition: all 1s;
+						}
 					}
 				}
 			}
@@ -195,6 +201,12 @@
 						height:32px;
 						background:none;
 						border:2px solid $greenFc;
+						&:hover{
+								background-color:$greenFc; 
+								color:#fff;
+								transition:all 1s;
+								-webkit-transition: all 1s;
+						}
 					}
 				}
 			}
@@ -250,9 +262,24 @@
 			font-size:0.98em;
 		}
 	}
+	.login{
+		width:100%;
+		padding:0 5%;
+
+	}
 }
 
 @media all and (max-width:480px) {
+	.lnb{
+		max-width:360px;
+		>ul{
+			width:100%;
+			li{
+				width:33.33%;
+	
+			}
+		}
+	}
 	.textForm{
 		font-size:1.2em;
 	}

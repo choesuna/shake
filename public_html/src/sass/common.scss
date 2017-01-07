@@ -95,6 +95,7 @@ table{
 
 }
 
+
 .logo{
 	width:250px;
 	position:absolute;
@@ -108,7 +109,7 @@ table{
 	width:170px;
 	height:59px;
 	position:absolute;
-	top:-1px;
+	top:0px;
 	right:-70px;
 
 	form{
@@ -147,7 +148,7 @@ table{
 			height:15px;
 			margin:0 auto;
 			background:url(../images/common/headerSearch.png) 0 0 no-repeat;
-			&:hover, &:active{
+			&:hover, &:focus{
 				background-position-x:-30px;
 			
 			}
@@ -162,6 +163,7 @@ table{
 	padding:39px 5%  0;
 
 	ul{
+
 		li{
 			float:left;
 			width:15.5%;
@@ -173,7 +175,7 @@ table{
 				font-size:1.1em;
 				text-align:center;
 				vertical-align:middle;
-				&:hover{
+				&:hover, &:focus{
 					color:$hText;
 				}
 
@@ -208,7 +210,7 @@ table{
 				text-align:center;
 				color:$text;
 				font-size:0.98em;
-				&:hover{
+				&:hover, &:focus{
 					color:$hText;
 				}
 				
@@ -333,7 +335,7 @@ table{
 		a{
 			color:$dark;
 		
-			&:hover{
+			&:hover, &:focus{
 				color:$hText;
 			}
 		}
@@ -379,10 +381,11 @@ table{
 	padding:4.5% 3.3%;
 	float:left;
 	height:630px;
-	&:hover p:first-child{
-		background-color:$greenFc; color:#fff;
-		transition:all 2s;
-		-webkit-transition: all 2s;
+	&:hover p:first-child, &:focus p:first-child{
+		background-color:$greenFc; 
+		color:#fff;
+		transition:all 1s;
+		-webkit-transition: all 1s;
 	
 	}
 	
@@ -677,7 +680,7 @@ table{
 			>a{
 				font-size:0.8em;
 				ext-align:center;
-				&:hover{
+				&:hover, &:focus{
 					color:#fff;
 				}
 			}
@@ -745,6 +748,7 @@ table{
 		z-index:0;
 		margin:0 auto;
 	}
+
 	.gnb {
 		padding: 15px;
 		ul{
@@ -761,7 +765,10 @@ table{
 			}
 		}
 	}
+	.wrapSearch{
+		right:0;
 	
+	}
 	.visual_1 .autoSlide ul > li > .textVis1{
 		max-width:300px;
 		p:first-child{
@@ -856,6 +863,10 @@ table{
 	.art_1_2{
 		padding:8% 10% 0;
 		float:none;
+	}
+
+	.visual_1 .autoSlide .bx-controls{
+		left:70%;
 	}
 	.visual_1 .autoSlide ul > li > .textVis1{
 		max-width:200px;

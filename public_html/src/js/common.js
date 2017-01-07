@@ -1,9 +1,29 @@
 $(function(){
 	
 	/***상단 서치 버튼 보였다 숨기기***/
-	$(".wrapSearch p a").on("click",function(){
-		$(".wrapSearch form").slideToggle("2000");	
-	});
+	//$(function(){
+		$(".wrapSearch p a").on("click",function(){
+			var th = $(this);
+			var openA  = null;
+			var downForm = $(".wrapSearch form");
+			var sForm = downForm.css("display");
+			if(sForm == "none"){
+				downForm.slideDown("2000", function(){
+					openA = th.css("background-position","0 -17px");
+					th.on("mouseover focus", function(){
+						openA = th.css("background-position","-30px -17px");
+					}); 
+					th.on("mouseleave focusout", function(){
+						openA = th.css("background-position","0 -17px");
+					});
+				});
+			}else{
+				downForm.slideUp("2000", function(){
+					th.css("background-position","0 0");
+				});
+			}
+		});
+	//});
 	
 	/***bxSlider***/
 	var i = 1;
