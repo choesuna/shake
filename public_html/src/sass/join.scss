@@ -21,7 +21,29 @@
 		margin:0 auto;
 	}
 }
-
+.joinState{
+	p{
+		width:61px;
+		height:10px;
+		overflow:hidden;
+		margin:40px auto 0;
+		span{
+			display:block;
+			float:left;
+			width:10px;
+			height:10px;
+			padding:18px 0;
+			margin:0 5px;
+			font-size:1px;
+			background:url(../images/common/slideDot.png) -18px 0 no-repeat;
+			background-size:51px 9px;
+			
+			&.on{
+				background-position-x: -29px;
+			}
+		}
+	}
+}
 .wrapMember{
 
 }
@@ -240,14 +262,14 @@
 					border-radius:2px;
 
 			}
-			input[type="reset"]{
+			input[type="button"]{
 				border:none;
 				width:170px;
 				height:70px;
 				background-color:$hText;
 				color:#fff;
 				font-size:1.2em;
-					border-radius:2px;
+				border-radius:2px;
 
 			}
 
@@ -256,10 +278,24 @@
 }
 
 @media (max-width:768px){ 
+	.wrapForm form{
+		padding:40px 5% 40px 3%;
+	}
 	.wrapForm table tr{
 		th{
 			width:25%;
-			font-size:0.98em;
+			padding:13px 0 13px 2% ;
+			font-size:0.96em;
+			label{
+				padding-left:5px;
+				span{
+					display:block;
+				}
+			}
+		}
+		td{
+			width:70%;
+			padding:5px 2% 5px 2%;
 		}
 	}
 	.login{
@@ -324,6 +360,9 @@
 						padding-left:0;
 					}
 				}
+				span:first-child+span{
+					padding:0 40px 0 50px;
+				}
 				span:first-child+span+span{
 					width:40px;
 					background-color:$greenFc;
@@ -347,7 +386,7 @@
 		.join>.wrapBtn{
 			p{
 				margin-top:30px;
-				input[type="submit"],input[type="reset"]{
+				input[type="submit"],input[type="button"]{
 					width:130px;
 					height:50px;
 					font-size:1.1em;
