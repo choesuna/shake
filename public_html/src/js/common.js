@@ -1,6 +1,24 @@
 (function(){
 	$(function(){
-		
+		var $logBtn = $("#login .loginBtn input[type=submit]");
+		var $log = $("#login");
+		console.log($("input[type=image]", $log));
+
+		/*var savId = function(){
+			alrt(1);
+		//e.preventDefault;
+			var th= $(this);
+			th.attr("src").replace("chk.png","chk_on.png");
+		}
+		$("input[type=image]", $log).on({"click": savId});*/
+
+
+		var login = function(e){//로그인에 클릭했을 때/ required씀
+			//e.preventDefault();
+			//var th = $(this);
+		}
+		$logBtn.on({"click":login});
+
 		/***상단 서치 버튼 토글***/
 		var $openA  = null;
 		var $schForm = $(".wrapSearch > form");
@@ -8,9 +26,9 @@
 		var $btnA = $(".wrapSearch p a");
 		var bP = "background-position";
 		//th.css("background-position","0 0");//화이트큐
-		//th.css("background-position","-17px 0");//블렉큐
+		//th.css("background-position","-17px 0");//블랙큐
 		//th.css("background-position","0 -17px");//화이트엑스
-		//th.css("background-position","-30px -17px");//블렉엑스
+		//th.css("background-position","-30px -17px");//블랙엑스
 		/***서치 슬라이드 토글, 백그라운드 이미지 변경***/
 		var aClick = function (){
 			var th = $(this);
@@ -53,9 +71,9 @@
 				
 
 
-
+	/***bxSlider***/
 	$(function(){
-		/***bxSlider***/
+		/***비주얼1 슬라이드***/
 		var i = 1;
 		var beforeTextZone = $(".autoSlider_vis1 .textVis1").eq(0);
 		$(".autoSlider_vis1 .textVis1").eq(0).css({display:"block"});
@@ -71,11 +89,10 @@
 		
 	
 
-
+		/***비주얼2,3 슬라이드***/
 		$(".btnSlide_vis2").bxSlider({auto:false, autoControls: false, controls:true, pager:true});
 		$(".autoSlide_vis3").bxSlider({auto:true, autoControls: true, controls:false, pager:true, minSlides:2, maxSlides:3, slideWidth: 325.7});
 		//$(window).resize();
-
 	});	
 
 	$(function(){
@@ -109,7 +126,9 @@
 			});
 		};
 		$(".lnb>ul>li>a").moveLnb();
-	});	
+	});	//문서 로딩되고 나서 실행
+
+
 		
-}());	
+}());//지역변수로 만드려고	
 

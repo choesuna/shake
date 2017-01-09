@@ -38,11 +38,10 @@ strong{
 			padding:18px 0;
 			margin:0 5px;
 			font-size:1px;
-			background:url(../images/common/slideDot.png) -18px 0 no-repeat;
-			background-size:51px 9px;
+			background:url(../images/common/slideDot.png) -32px 0 no-repeat;
 			
 			&.on{
-				background-position-x: -29px;
+				background-position-x: -21px;
 			}
 		}
 	}
