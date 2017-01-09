@@ -129,7 +129,7 @@ table{
 				font-size:0.9em;
 				&:hover{
 					color:$greenFc;
-					
+					background-position:0 -30px;
 				}
 			}
 			&:checked+label{

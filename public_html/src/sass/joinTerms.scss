@@ -98,16 +98,12 @@ strong{
 				padding:8px 15px;
 				font-size:1.1em;
 				color:$text;
-			
-
-
 			}
 			.articleAgree{
 				overflow-y:scroll;
 				padding:10px 15px;
 				height:200px;
 				font-size:0.8em;
-		
 
 				span{
 					margin:5px 0;
@@ -115,41 +111,36 @@ strong{
 				}
 				p{
 					text-indent:10px;
-					margin-bottom:10x;
+					margin-bottom:10px;
 				}
 			}
 			.agreeChk{
-			
-				input[type=checkbox]{
-					position:absolute;
-					top:9px;
-					right:14px;
-					width:0;
-					height:0;
-					opacity:0;
-
-				}
 				label{
-					width:24px;
-					height:24px;
+					width:30px;
+					height:30px;
 					display:block;
 					position:absolute;
 					text-indent:-9999px;
-					top:9px;
-					right:14px;
-					background:url(../images/common/chk.png) 0 0 no-repeat;
-					background-size:24px 24px;
+					top:1px;
+					right:15px;
+					background:url(../images/common/chk_both.png) 0 0 no-repeat ; 
 
 					&:hover, &:focus, &.on{
-						background-image:url(../images/common/chk_on.png);
-						background-size:27px 27px;
-		
+						background-position-y:-30px;
+					}
+				}
+				input[type="checkbox"]{
+					position:absolute;
+					left:-9999px;
+					&:checked+label{
+						background-position-y:-30px;
 					}
 				}
 			}
 		}
 	}
 }
+
 .join>.wrapBtn{
 	border-top:1px solid $bd;
 	margin-top:30px;
@@ -174,9 +165,7 @@ strong{
 			color:#fff;
 			font-size:1.2em;
 			border-radius:2px;
-
 		}
-
 	}
 }
 
@@ -184,10 +173,9 @@ strong{
 	.textForm{
 		font-size:1.1em;
 	}
-	
 }
 
-@media all and (max-width:480px) {
+@media all and (max-width:480px){
 	.lnb{
 		max-width:360px;
 		>ul{

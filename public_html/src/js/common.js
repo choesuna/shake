@@ -1,23 +1,17 @@
 (function(){
+	
+	/***회원가입 체크되고 다음 넘어가기***/
 	$(function(){
-		var $logBtn = $("#login .loginBtn input[type=submit]");
-		var $log = $("#login");
-		console.log($("input[type=image]", $log));
+		var th = $(this);
+		var $chkForm = $("form .agreeChk").find(":checkbox");
+		var joinSubmit = $("form .join input[type=submit]").on("click", function(){
+			if($($chkForm[0]).is(":checked") == false || $($chkForm[1]).is(":checked") == false){
+				alert("회원가입 약관에 동의 해주세요");
+			};
+		});
+	});
 
-		/*var savId = function(){
-			alrt(1);
-		//e.preventDefault;
-			var th= $(this);
-			th.attr("src").replace("chk.png","chk_on.png");
-		}
-		$("input[type=image]", $log).on({"click": savId});*/
-
-
-		var login = function(e){//로그인에 클릭했을 때/ required씀
-			//e.preventDefault();
-			//var th = $(this);
-		}
-		$logBtn.on({"click":login});
+	$(function(){
 
 		/***상단 서치 버튼 토글***/
 		var $openA  = null;
@@ -92,7 +86,7 @@
 		/***비주얼2,3 슬라이드***/
 		$(".btnSlide_vis2").bxSlider({auto:false, autoControls: false, controls:true, pager:true});
 		$(".autoSlide_vis3").bxSlider({auto:true, autoControls: true, controls:false, pager:true, minSlides:2, maxSlides:3, slideWidth: 325.7});
-		//$(window).resize();
+
 	});	
 
 	$(function(){
