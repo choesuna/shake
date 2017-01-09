@@ -277,15 +277,15 @@ table{
 				display:inline-block;
 				.bx-pager-link{
 					text-indent:-9999px;
-					width:9px;
+					width:10px;
 					height:9px;
 					display:block;
 				
 					margin:0 3px;
-					background:url(../images/common/slideDot.png) 0 0 no-repeat;
+					background:url(../images/common/slideDot.png) -10px 0 no-repeat;
 
 					&.active{
-						background-position:-9px 0;
+						background-position:-22px 0;
 					}
 				}
 
@@ -296,14 +296,14 @@ table{
 
 			.bx-controls-auto-item{		
 				>a{
-					width:9px;
+					width:10px;
 					height:9px;
 					display:block;
 					text-indent:-9999px;
-					background:url(../images/common/slideDot.png) -28px 0 no-repeat;
+					background:url(../images/common/slideDot.png) -50px 0 no-repeat;
 
 					&.bx-stop{
-						background-position: -18px 0;
+						background-position: -42px 0;
 					}
 					&.active{
 						display:none;
@@ -452,14 +452,14 @@ table{
 			display:inline-block;
 			.bx-pager-link{
 				text-indent:-9999px;
-				width:9px;
+				width:10px;
 				height:9px;
 				display:block;
 				margin:0 3px;
-				background:url(../images/common/slideDot.png) 0 0 no-repeat;
+				background:url(../images/common/slideDot.png) -11px 0 no-repeat;
 
 				&.active{
-					background-position:-9px 0;
+					background-position:-22px 0;
 
 				}
 			}
@@ -569,14 +569,14 @@ table{
 				display:inline-block;
 				.bx-pager-link{
 					text-indent:-9999px;
-					width:9px;
+					width:10px;
 					height:9px;
 					display:block;
 					margin:0 3px;
-					background:url(../images/common/slideDot.png) 0 0 no-repeat;
+					background:url(../images/common/slideDot.png) -11px 0 no-repeat;
 
 					&.active{
-						background-position:-9px 0;
+						background-position:-22px 0;
 					}
 				}
 
@@ -587,14 +587,14 @@ table{
 
 			.bx-controls-auto-item{		
 				>a{
-					width:9px;
+					width:10px;
 					height:9px;
 					display:block;
 					text-indent:-9999px;
-					background:url(../images/common/slideDot.png) -28px 0 no-repeat;
+					background:url(../images/common/slideDot.png) -50px 0 no-repeat;
 
 					&.bx-stop{
-						background-position: -18px 0;
+						background-position: -42px 0;
 					}
 					&.active{
 						display:none;

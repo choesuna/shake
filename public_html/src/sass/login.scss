@@ -35,6 +35,8 @@
 	font-size:1.8em;
 	font-weight:bold;
 	text-shadow:0 0 15px $text;
+	
+
 	text-align:center;
 	padding:50px 0 30px;
 
@@ -59,7 +61,7 @@
 	p{
 		text-align:center;
 	}
-	span{
+	strong{
 		color:$greenFc;
 	}
 }
@@ -115,14 +117,26 @@ table{
 				margin:0 auto;
 				text-align:left;
 				height:32px;
-				label{
-					left:35px;
-					height:32px;
-					line-height:32px;
+				
+			}
+		}
+		.chkImg{
+			position:absolute;
+			left:-9999px;
+			+label{
+				background:url("../images/common/chk_both.png") no-repeat 0 0; 
+				padding-left:32px;
+				font-size:0.9em;
+				&:hover{
+					color:$greenFc;
 					
 				}
 			}
+			&:checked+label{
+				background-position:0 -30px;
+			}
 		}
+
 		&:first-child+tr+tr+tr+tr{
 			td>p{
 				width:90%;
@@ -163,6 +177,7 @@ table{
 	}
 	
 }
+
 @media (max-width:768px){ 
 	.login{
 		width:100%;
